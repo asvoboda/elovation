@@ -4,8 +4,6 @@ ruby '2.1.4'
 
 gem 'rails', '~> 4.1.7'
 
-gem 'pg'
-
 gem 'sass-rails', '~> 4.0.3'
 gem 'jquery-rails'
 gem 'coffee-rails'
@@ -25,6 +23,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'quiet_assets'
+  gem 'sqlite3'
 end
 
 group :development, :test do
@@ -43,4 +42,8 @@ group :test do
   gem 'mocha'
   gem 'rspec-rails', '~> 2.14.2'
   gem 'timecop'
+end
+
+group :production, :test do
+  gem 'pg'
 end

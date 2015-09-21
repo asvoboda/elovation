@@ -1,7 +1,6 @@
 development:
-  adapter: postgresql
-  database: elovation_development
-  host: localhost
+  adapter: sqlite3
+  database: db/development.sqlite3
   min_messages: WARNING
 
 # Warning: The database defined as "test" will be erased and
