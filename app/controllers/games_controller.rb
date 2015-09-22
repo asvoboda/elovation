@@ -81,6 +81,7 @@ class GamesController < ApplicationController
                                 :max_number_of_teams,
                                 :min_number_of_players_per_team,
                                 :max_number_of_players_per_team,
-                                :allow_ties)
+                                :allow_ties,
+                                :notes)
   end
 end

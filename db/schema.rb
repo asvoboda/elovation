@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 7) do
+ActiveRecord::Schema.define(version: 20150921234932) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 7) do
     t.integer  "min_number_of_players_per_team"
     t.integer  "max_number_of_players_per_team"
     t.boolean  "allow_ties"
+    t.text     "notes"
   end
 
   create_table "players", force: true do |t|
