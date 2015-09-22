@@ -16,6 +16,8 @@ gem 'dynamic_form'
 gem 'elo'
 gem 'trueskill', github: 'saulabs/trueskill', require: 'saulabs/trueskill'
 
+gem 'redcarpet'
+
 group :production do
   gem 'rails_12factor'
   gem 'unicorn'
